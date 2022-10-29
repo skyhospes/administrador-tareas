@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    color: white;
+  }
+  
+  main {
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+,    Opera 12+, Safari 7+ */
+
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  form {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  .mainCard {
+    width: 40vw;
+    border-radius: 25px;
+    background-color: rgb(0, 0, 0);
+    padding: 25px;
+  }
+  
+  .title {
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .inputForm {
+    background-color: #2a1757;
+    border: none;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    outline: none;
+    width: 65%;
+  }
+  
+  .inputForm::placeholder {
+    padding: 0px;
+  }
+  
+  .btnCreate {
+    padding: 10px 15px;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cardsList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    max-height: 60vh;
+    height: 60vh;
+  }
+  
+  .card {
+    width: 90%;
+    padding: 15px;
+    box-shadow: 2px 4px 4px 4px rgba(105, 15, 165, 0.356);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin: 5px 0px;
+    position: relative;
+  }
+  
+  .task {
+    padding: 10px;
+  }
+  
+  .icon {
+    cursor: pointer;
+  }
+  
+  .icon:hover {
+    color: rgba(62, 161, 219, 1);
+  }
+  
+  .completeIcon {
+    color: rgb(26, 211, 26);
+  }
+  
+  .trashIcon:hover {
+    color: #f00;
+  }
+  
+  .deleteConfirmationPop {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    z-index: 99;
+    width: 100%;
+    top: -100px;
+    left: 0;
+  }
+  .deleteSpace {
+    position: relative;
+    width: 30%;
+  }
+  
+  .noTasks {
+    font-size: 48px;
+  }
