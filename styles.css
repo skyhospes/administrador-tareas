@@ -48,11 +48,15 @@
     padding: 10px;
     border: 1px solid rgb(0, 0, 0);
     outline: none;
-    width: 65%;
+    width: 35%;
   }
   
   .inputForm::placeholder {
     padding: 0px;
+  }
+
+  .inputDate{
+    color: black;
   }
   
   .btnCreate {
@@ -77,6 +81,10 @@
     max-height: 60vh;
     height: 60vh;
   }
+
+  ::-webkit-scrollbar {
+    display: none;
+}
   
   .card {
     width: 90%;
@@ -125,4 +133,10 @@
   
   .noTasks {
     font-size: 48px;
+  }
+
+  .date{
+    width: 100%;
+    padding: 15px;
+    
   }
